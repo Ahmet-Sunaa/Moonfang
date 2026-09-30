@@ -1,4 +1,4 @@
-﻿# =============================================================================
+# =============================================================================
 # 🌙 Moonfang — legal/ sayfalarindaki yer tutuculari tek komutla doldurur
 # =============================================================================
 # Google Play yayini oncesi privacy-policy.html, account-deletion.html ve
