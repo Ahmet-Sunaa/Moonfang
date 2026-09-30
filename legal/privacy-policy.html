@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gizlilik Politikası — Moonfang</title>
+<meta name="description" content="Moonfang (Android oyunu) gizlilik politikası: hangi veriler toplanır, neden toplanır, nasıl silinir.">
+<style>
+  :root { --bg:#0e0b14; --card:#171223; --line:#2c2340; --txt:#e9e4f5; --mut:#a99fc4; --acc:#b4443c; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--txt); font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; }
+  wrap, main { display:block; max-width:820px; margin:0 auto; padding:28px 18px 64px; }
+  h1 { font-size:26px; margin:0 0 6px; }
+  h2 { font-size:19px; margin:28px 0 8px; border-left:4px solid var(--acc); padding-left:10px; }
+  h3 { font-size:16px; margin:18px 0 4px; }
+  p, li { color:var(--txt); }
+  .mut { color:var(--mut); }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:14px 0; }
+  .warn { border-color:#6b3a2f; background:#1d1420; }
+  table { width:100%; border-collapse:collapse; margin:10px 0; font-size:15px; }
+  th, td { text-align:left; padding:8px 10px; border-bottom:1px solid var(--line); vertical-align:top; }
+  th { color:var(--mut); font-weight:600; }
+  code { background:#221a33; padding:2px 6px; border-radius:6px; font-size:14px; }
+  a { color:#e79a92; }
+  ul { padding-left:22px; }
+  .foot { margin-top:34px; padding-top:14px; border-top:1px solid var(--line); font-size:14px; color:var(--mut); }
+  .lang { font-size:14px; }
+  .ph { color:#ffd9a0; }
+</style>
+</head>
+<body>
+<main>
+  <p class="lang"><a href="index.html">← İçindekiler</a> · <a href="account-deletion.html">Hesap silme →</a></p>
+  <h1>🔒 Gizlilik Politikası</h1>
+  <p class="mut"><b>Moonfang</b> Android uygulaması · Yürürlük tarihi: 30.09.2026</p>
+
+
+  <h2>1. Veri sorumlusu</h2>
+  <p>Bu uygulamayı yayınlayan Adın Soyadın ("geliştirici"), kişisel verilerin toplanmasından
+  ve işlenmesinden sorumlu taraftır. Uygulama <b>ücretsizdir</b>, içinde <b>ödeme/banka işlemi yoktur</b> ve
+  gelir yalnızca reklam gösteriminden (Google AdMob) sağlanır.</p>
+  <p>İletişim: <a href="mailto:gerçek-adresin@gmail.com">gerçek-adresin@gmail.com</a></p>
+
+  <h2>2. Toplanan veriler</h2>
+  <table>
+    <tr><th>Veri</th><th>Nasıl toplanır</th><th>Amaç</th><th>Tür</th></tr>
+    <tr>
+      <td>Google adın, e-posta adresin ve benzersiz kullanıcı kimliğin (UID)</td>
+      <td>Google ile giriş yaptığında (Firebase Authentication)</td>
+      <td>Hesabını oluşturmak, ilerlemeni cihazlar arasında taşımak</td>
+      <td>Kişisel veri</td>
+    </tr>
+    <tr>
+      <td>Oyun ilerlemen: isim, elmas, kalıcı yükseltmeler, rekorlar, ayarlar</td>
+      <td>Oyun içinde kaydettiğinde (Cloud Firestore)</td>
+      <td>İlerlemeni saklamak, liderlik tablosunda göstermek</td>
+      <td>Hesaba bağlı veri</td>
+    </tr>
+    <tr>
+      <td>Liderlik tablosu için görünen isim ve rekorların</td>
+      <td>Liderlik tablosu açıldığında diğer oyuncularla paylaşılır</td>
+      <td>Sıralama göstermek</td>
+      <td>Diğer oyunculara görünür</td>
+    </tr>
+    <tr>
+      <td>Reklam verileri: reklam kimliği (Advertising ID / GAID), cihaz ve reklam etkileşimi</td>
+      <td>Google AdMob reklam SDK'sı tarafından</td>
+      <td>Reklam göstermek, reklam gelirini ölçmek</td>
+      <td>Reklam SDK'sı toplayıcısı: Google</td>
+    </tr>
+    <tr>
+      <td>Oyun ayarları ve son kayıt (cihazında)</td>
+      <td>Uygulamanın kendi depalamasında (localStorage)</td>
+      <td>Çevrimdışı oynayabilmek, internet yoksa ilerlemeyi korumak</td>
+      <td>Yalnızca cihazında kalır</td>
+    </tr>
+  </table>
+  <p class="mut">Bağlantı noktası (IP) adresi ve temel cihaz bilgileri, yukarıdaki servisleri (Firebase, AdMob)
+  kullandığımız için Google altyapısı tarafından otomatik olarak görülebilir. Uygulama konum, rehber, kamera,
+  mikrofon veya dosyalarına <b>erişmez</b>.</p>
+
+  <h2>3. Verilerin kullanılmadığı alanlar</h2>
+  <ul>
+    <li>Verilerin <b>satılmaz</b>; reklam dışı amaçla üçüncü taraflara verilmez.</li>
+    <li>Profil oluşturma, kredi değerlendirmesi veya hassas kategorilere göre hedefleme yapılmaz.</li>
+    <li>E-posta adresin sana pazarlama (spam) göndermek için kullanılmaz.</li>
+  </ul>
+
+  <h2>4. Reklamlar (Google AdMob)</h2>
+  <p>Uygulama ücretsiz kalabilsin için reklam gösterilir. Reklamlar Google AdMob tarafından sağlanır; bu nedenle
+  Google'ın <a href="https://policies.google.com/privacy">Gizlilik Politikası</a> ve
+  <a href="https://policies.google.com/technologies/ads">Reklam Politikası</a> de geçerlidir.
+  Cihazında <i>Kişiselleştirilmiş reklamlar</i> ayarını kapatabilir veya reklam kimliğini sıfırlayabilirsin;
+  bu durumda da reklamlar gösterilmeye devam eder, sadece kişiye özel olmaz.</p>
+  <p class="mut">Avrupa Ekonomik Alanı, Birleşik Krallık ve Türkiye gibi bölgelerde Google'ın onay (consent)
+  mesajı gösterilmesi için AdMob/UMP ayarları Play Console üzerinden etkinleştirilir.</p>
+
+  <h2>5. Verilerin saklandığı yer ve süresi</h2>
+  <p>Hesap (Firebase Authentication) ve oyun kaydı (Cloud Firestore) <b>Google altyapısında</b> saklanır.
+  Veriler, hesabını silene kadar saklanır; hesap silindiğinde aşağıdaki sürelerde kaldırılır:</p>
+  <ul>
+    <li><b>Hesap ve oyun kaydı:</b> silme isteği alındıktan sonra <b>en geç 30 gün</b> içinde kalıcı olarak silinir
+      (uygulama içi butonla silmede anında silinir).</li>
+    <li><b>Cihazındaki yerel kayıt:</b> uygulamadan çıkış yaptığında veya hesabını sildiğinde anında silinir.</li>
+    <li><b>Liderlik tablosu:</b> kaydın silinince listenin dışına çıkar (önbellekler nedeniyle birkaç saat sürebilir).</li>
+    <li><b>Reklam verileri:</b> Google'ın kendi saklama politikasına tabidir; reklam kimliğini cihaz ayarlarından
+      sıfırlayabilirsin.</li>
+  </ul>
+
+  <h2>6. Verilerini silme yolları</h2>
+  <p>Hesap oluşturulabiliyorsa <b>silme de mümkündür</b>. İki yol vardır:</p>
+  <div class="card">
+    <h3>1) Uygulama içinden (anında)</h3>
+    <p>⚙️ <b>Ayarlar</b> → 👤 <b>Profil</b> → 🗑️ <b>"Hesabımı ve Tüm Verilerimi Sil"</b> → onay.</p>
+    <p class="mut">Buluttaki kaydın, bu uygulamadaki Google bağlantın ve bu telefondaki ilerlemen silinir.
+    Silme sırasında Google bir kez daha kimlik doğrulamanı isteyebilir.</p>
+  </div>
+  <div class="card">
+    <h3>2) Web üzerinden veya e-posta ile</h3>
+    <p><a href="account-deletion.html">→ Hesap silme sayfası</a> · E-posta:
+      <a href="mailto:gerçek-adresin@gmail.com">gerçek-adresin@gmail.com</a> (giriş yaptığın Google adresinden gönder)</p>
+  </div>
+
+  <h2>7. Çocukların gizliliği</h2>
+  <p>Uygulamanın hedef kitlesi <b>13 yaş ve üzeri</b>dir; <b>13 yaş altı çocuklara yönelik değildir</b> ve onlardan
+  bilinçli olarak veri toplamaz. Reklam gösterildiği için uygulama çocuk profiline yönlendirilmez. 13 yaş altı bir
+  çocuğun hesabı oluşturulduğunu fark edersen <a href="mailto:gerçek-adresin@gmail.com">gerçek-adresin@gmail.com</a>
+  adresinden bildir; hesap derhal silinir.</p>
+
+  <h2>8. Hakların</h2>
+  <p>Kendi verilerin için erişme, düzeltme, silme ve işlemeye itiraz haklarını kullanabilirsin
+  (KVKK/GDPR kapsamındaki taleplerin dahil). Taleplerini <a href="mailto:gerçek-adresin@gmail.com">gerçek-adresin@gmail.com</a>
+  adresine gönder; en geç <b>30 gün</b> içinde yanıt verilir. Ayrıca Play Store listing'indeki
+  "Gizlilik politikası" bağlantısından bu sayfaya ulaşabilirsin.</p>
+
+  <h2>9. Politikada değişiklikler</h2>
+  <p>Bu sayfada değişiklik yapılırsa yürürlük tarihi güncellenir ve yeni sürüm uygulamanın içindeki
+  ⚙️ Ayarlar → ⚖️ Yasal bağlantısından erişilebilir hale gelir. Ciddi değişiklikler uygulama içinde de duyurulur.</p>
+
+  <h2>10. İletişim</h2>
+  <p>Soru, itiraz ve veri silme talepleri: <a href="mailto:gerçek-adresin@gmail.com">gerçek-adresin@gmail.com</a>
+  · Geliştirici: Adın Soyadın</p>
+
+  <div class="card">
+    <h3>🌐 English summary</h3>
+    <p class="mut">This app is free and ad-supported (Google AdMob). When you sign in with Google we receive your
+    name, email address and a unique user ID through Firebase Authentication; your game progress (name, crystals,
+    upgrades, records, settings) is stored in Cloud Firestore and shown in the leaderboard. Ads use the Android
+    advertising ID via Google's AdMob SDK. We do not sell your data, we do not request location, contacts, camera or
+    microphone permissions, and the app is not directed at children under 13. You can delete your account and all
+    associated data instantly in-app (<b>Settings → Profile → "Delete My Account and All Data"</b>) or by using
+    <a href="account-deletion.html">this web page</a> or e-mailing <a href="mailto:gerçek-adresin@gmail.com">gerçek-adresin@gmail.com</a>;
+    deletion completes within 30 days.</p>
+  </div>
+
+  <p class="foot">© 2026 Adın Soyadın ·
+  Gizlilik Politikası · <a href="account-deletion.html">Hesap silme</a> · <a href="index.html">İçindekiler</a></p>
+</main>
+</body>
+</html>
